@@ -635,7 +635,7 @@ function findSvar(tekst) {
       let ramt = false;
       if (ord.length <= 3) {
         // korte ord skal stå som hele ord, fx "vr" eller "sd"
-        const dele = t.split(/[^p{L}p{N}]+/u);
+        const dele = t.split(/[^\p{L}\p{N}]+/u);
         ramt = dele.includes(ord);
       } else {
         ramt = t.includes(ord);
