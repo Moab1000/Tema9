@@ -1,0 +1,361 @@
+/*************** Design tokens (fra Figma-variablerne) ****/
+/* Tre lag, ligesom i Figma:
+   1) EK / Primitives  = de rå farver
+   2) EK / Semantic    = hvad farven bruges til (bg, text, action ...)
+   3) EK / Lab theme   = 6 modes – én pr. lab (skiftes med en klasse)      */
+
+:root {
+  /***** 1. EK / Primitives *****/
+  --plum-950: #2e0619;
+  --plum-900: #4a0a2b;
+  --plum-700: #6b1040;
+  --plum-500: #8e2a5d;
+  --rose-500: #c35f7c;
+  --pink-400: #f08a9b;
+  --pink-200: #f8c3cc;
+  --blush-100: #fad8de;
+  --blush-50: #fdeef1;
+  --cream-50: #fbf7ea;
+  --mint-200: #b3d8b8;
+  --green-500: #67ad84;
+  --green-700: #3e7e5a;
+  --blue-500: #6886c0;
+  --blue-700: #3f5c96;
+  --blue-100: #dce4f4;
+  --yellow-400: #e8d828;
+  --yellow-100: #f8f2b8;
+  --ink-900: #1e1a1c;
+  --ink-700: #3d3539;
+  --ink-500: #6e6469;
+  --ink-200: #d9d2d5;
+  --white: #ffffff;
+
+  /***** 2. EK / Semantic *****/
+  --bg-page: var(--cream-50);
+  --bg-surface: var(--white);
+  --bg-surface-alt: var(--blush-100);
+  --bg-dark: var(--plum-900);
+  --bg-footer: var(--plum-950);
+  --text-default: var(--ink-900);
+  --text-muted: var(--ink-500);
+  --text-accent: var(--plum-700);
+  --text-on-dark: var(--cream-50);
+  --action-primary: var(--plum-700);
+  --action-primary-hover: var(--plum-900);
+  --action-cta: var(--mint-200);
+  --action-cta-hover: var(--green-500);
+  --accent-pink: var(--pink-400);
+  --border-default: var(--ink-200);
+  --status-available: var(--green-700);
+  --status-available-bg: #ddefeb;
+  --status-few: #7a6a00;
+  --status-few-bg: var(--yellow-100);
+  --status-out: var(--plum-700);
+  --status-out-bg: var(--blush-100);
+
+  /***** 3. EK / Lab theme (standard = Tech & Story) *****/
+  --lab-color: var(--plum-700);
+  --lab-soft: var(--blush-100);
+  --lab-on-color: var(--cream-50);
+
+  /***** Afstande (4px-skala) *****/
+  --space-1: 4px;
+  --space-2: 8px;
+  --space-3: 12px;
+  --space-4: 16px;
+  --space-5: 24px;
+  --space-6: 32px;
+  --space-7: 48px;
+  --space-8: 64px;
+  --space-9: 96px;
+  --space-10: 128px;
+
+  /***** Hjørner og skygger *****/
+  --radius-sm: 8px;
+  --radius-md: 16px;
+  --radius-lg: 28px;
+  --radius-pill: 999px;
+  --shadow-sm: 0 2px 6px rgba(46, 5, 26, 0.08);
+  --shadow-md: 0 6px 20px rgba(46, 5, 26, 0.12);
+  --shadow-lg: 0 20px 50px rgba(46, 5, 26, 0.22);
+
+  /***** Fonte *****/
+  --font-display: "Encode Sans Condensed", sans-serif;
+  --font-body: "Encode Sans", sans-serif;
+  --font-accent: "Zilla Slab", serif;
+}
+
+/* Lab theme – de 6 modes fra Figma */
+.tema_tech_story {
+  --lab-color: var(--plum-700);
+  --lab-soft: var(--blush-100);
+  --lab-on-color: var(--cream-50);
+}
+
+.tema_maker {
+  --lab-color: var(--blue-700);
+  --lab-soft: var(--blue-100);
+  --lab-on-color: var(--white);
+}
+
+.tema_media {
+  --lab-color: #d4566f;
+  --lab-soft: var(--blush-50);
+  --lab-on-color: var(--plum-950);
+}
+
+.tema_circular_material {
+  --lab-color: #2f6b66;
+  --lab-soft: #ddefeb;
+  --lab-on-color: var(--cream-50);
+}
+
+.tema_circular {
+  --lab-color: var(--green-700);
+  --lab-soft: #ddefeb;
+  --lab-on-color: var(--cream-50);
+}
+
+.tema_lab16 {
+  --lab-color: #e2c51c;
+  --lab-soft: var(--yellow-100);
+  --lab-on-color: var(--ink-900);
+}
+
+/*************** Reset *********************/
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+img {
+  max-width: 100%;
+  display: block;
+}
+
+a {
+  color: inherit;
+}
+
+button {
+  font: inherit;
+  color: inherit;
+}
+
+body {
+  background-color: var(--bg-page);
+  color: var(--text-default);
+  font-family: var(--font-body);
+  font-size: 17px; /* Body/Base */
+  line-height: 1.6;
+}
+
+/*************** Tekst-styles (de 15 fra Figma) ****/
+
+h1,
+h2,
+h3,
+h4 {
+  font-family: var(--font-display);
+  font-weight: 600;
+}
+
+h1 {
+  /* Display/4XL */
+  font-size: 96px;
+  line-height: 0.98;
+  letter-spacing: -2.5px;
+}
+
+h2 {
+  /* Display/3XL */
+  font-size: 64px;
+  line-height: 1.02;
+  letter-spacing: -1.5px;
+}
+
+h3 {
+  /* Heading/XL */
+  font-size: 26px;
+  line-height: 1.2;
+}
+
+h4 {
+  /* Heading/LG */
+  font-size: 20px;
+  line-height: 1.2;
+}
+
+/* den kursive del af en overskrift – Zilla Slab som i logoerne */
+.kursiv {
+  font-family: var(--font-accent);
+  font-style: italic;
+  font-weight: 600;
+  color: var(--text-accent);
+}
+
+.eyebrow {
+  /* Label/Eyebrow */
+  font-family: var(--font-display);
+  font-weight: 600;
+  font-size: 15px;
+  line-height: 1;
+  letter-spacing: 2.1px;
+  text-transform: uppercase;
+  color: var(--text-accent);
+}
+
+.lead {
+  /* Body/Lead */
+  font-size: 20px;
+  line-height: 1.6;
+  color: var(--text-muted);
+  max-width: 620px;
+}
+
+.lille {
+  /* Body/XS Bold */
+  font-size: 13px;
+  font-weight: 600;
+  line-height: 1.3;
+  color: var(--text-muted);
+}
+
+.smaa_tekst {
+  /* Body/Small */
+  font-size: 15px;
+  line-height: 1.5;
+}
+
+.greytext {
+  color: var(--text-muted);
+}
+
+.groen {
+  color: var(--status-available);
+}
+
+/*************** Knapper (Button: Primary / CTA / Ghost · M / S) ****/
+
+.knap {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+  padding: 15px 24px;
+  border-radius: var(--radius-md);
+  border: 2px solid transparent;
+  font-family: var(--font-display);
+  font-weight: 600;
+  font-size: 17px; /* Label/Button */
+  line-height: 1;
+  letter-spacing: 0.17px;
+  text-decoration: none;
+  cursor: pointer;
+  transition: transform 0.15s, background-color 0.15s, box-shadow 0.15s;
+}
+
+.knap:hover {
+  transform: translateY(-2px);
+  box-shadow: var(--shadow-md);
+}
+
+.knap_cta {
+  background-color: var(--action-cta);
+  color: var(--text-default);
+}
+
+.knap_cta:hover {
+  background-color: var(--action-cta-hover);
+}
+
+.knap_primary {
+  background-color: var(--action-primary);
+  color: var(--text-on-dark);
+}
+
+.knap_primary:hover {
+  background-color: var(--action-primary-hover);
+}
+
+.knap_ghost {
+  background-color: transparent;
+  color: inherit;
+  border-color: currentColor;
+}
+
+.knap_ghost:hover {
+  background-color: rgba(255, 255, 255, 0.12);
+}
+
+.knap_lille {
+  padding: 10px 16px;
+  border-radius: 10px;
+  font-size: 15px;
+  letter-spacing: 0.15px;
+}
+
+.knap:disabled {
+  opacity: 0.5;
+  cursor: not-allowed;
+  transform: none;
+  box-shadow: none;
+}
+
+/*************** Tags og badges ****/
+
+.tag {
+  /* Tag – farven følger lab-temaet (lab/soft) */
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  padding: 6px 12px;
+  border-radius: var(--radius-pill);
+  background-color: var(--lab-soft);
+  color: var(--text-default);
+  font-size: 13px;
+  font-weight: 600;
+  line-height: 1.3;
+  text-decoration: none;
+}
+
+.badge {
+  /* Badge – ledighed, med en lille prik */
+  display: inline-flex;
+  align-items: center;
+  gap: 7px;
+  padding: 6px 10px;
+  border-radius: var(--radius-pill);
+  font-size: 13px;
+  font-weight: 600;
+  line-height: 1.3;
+}
+
+.badge::before {
+  content: "";
+  width: 8px;
+  height: 8px;
+  border-radius: 50%;
+  background-color: currentColor;
+}
+
+.ledig {
+  background-color: var(--status-available-bg);
+  color: var(--status-available);
+}
+
+.faa {
+  background-color: var(--status-few-bg);
+  color: var(--status-few);
+}
+
+.udlaant {
+  background-color: var(--status-out-bg);
+  color: var(--status-out);
+}

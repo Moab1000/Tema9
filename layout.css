@@ -1,0 +1,2032 @@
+/******** Header / Menu *********/
+
+header {
+  display: flex;
+  align-items: center;
+  gap: 56px;
+  padding: 20px 72px;
+  background-color: #fdbead;
+  border-bottom: 1px solid rgba(107, 15, 64, 0.12);
+}
+
+.logo a {
+  display: block;
+  line-height: 0;
+}
+
+.logo img {
+  width: 248px;
+  height: 36px;
+}
+
+nav {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  gap: 14px;
+}
+
+.servicemenu {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  gap: 28px;
+  list-style: none;
+}
+
+.servicemenu a {
+  font-weight: 300;
+  font-size: 15px;
+  color: #333333;
+  text-decoration: none;
+}
+
+.servicemenu a:hover {
+  text-decoration: underline;
+}
+
+.menu {
+  display: flex;
+  gap: 40px;
+  list-style: none;
+}
+
+.menu a {
+  display: block;
+  font-weight: 300;
+  font-size: 20px;
+  color: #333333;
+  text-decoration: none;
+  transition: color 0.3s;
+}
+
+.menu a:hover,
+.menu a.aktiv {
+  color: var(--text-accent);
+  font-weight: 500;
+  text-decoration: underline;
+  text-underline-offset: 6px;
+  text-decoration-thickness: 2px;
+}
+
+/* "Spørg EK's AI" – erstatter søgefeltet */
+.spoerg_knap {
+  display: inline-flex;
+  align-items: center;
+  gap: 12px;
+  padding: 5px 5px 5px 18px;
+  border: 0;
+  border-radius: var(--radius-pill);
+  background-color: var(--action-primary);
+  color: var(--text-on-dark);
+  font-family: var(--font-display);
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 1;
+  box-shadow: 0 4px 12px rgba(74, 10, 43, 0.22);
+  cursor: pointer;
+  transition: transform 0.15s, box-shadow 0.15s;
+}
+
+.spoerg_knap:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 8px 18px rgba(74, 10, 43, 0.3);
+}
+
+.spoerg_knap .avatar {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  background-color: var(--white);
+}
+
+.spoerg_knap .avatar img {
+  width: 30px;
+}
+
+/******** Mobile Menu (burger) *********/
+
+.burger {
+  display: none;
+  width: 30px;
+  height: 20px;
+  background: transparent;
+  border: 0;
+  cursor: pointer;
+}
+
+.burger .line {
+  display: block;
+  width: 100%;
+  height: 2px;
+  background-color: #333333;
+  margin-bottom: 5px;
+  transition: 0.2s linear;
+}
+
+/******** Sektioner *********/
+
+section {
+  padding: 96px 100px;
+}
+
+.indhold {
+  max-width: 1240px;
+  margin: 0 auto;
+}
+
+/* overskrift-blok øverst i en sektion: eyebrow + h2 + lead */
+.sektion_top {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 14px;
+  margin-bottom: 48px;
+}
+
+.lys {
+  background-color: var(--bg-surface-alt);
+}
+
+.moerk {
+  background-color: var(--action-primary);
+  color: var(--text-on-dark);
+}
+
+.moerkest {
+  background-color: var(--bg-dark);
+  color: var(--text-on-dark);
+}
+
+.moerk .eyebrow,
+.moerkest .eyebrow,
+.moerk .kursiv,
+.moerkest .kursiv {
+  color: var(--accent-pink);
+}
+
+.moerk .lead,
+.moerkest .lead {
+  color: var(--text-on-dark);
+}
+
+/******** Grids *********/
+
+.grid_1-1 {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 40px;
+  align-items: center;
+}
+
+.grid_1-1-1 {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  gap: 24px;
+}
+
+.grid_1-1-1-1 {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  gap: 24px;
+}
+
+/******** Hero (forside) *********/
+
+.hero {
+  padding: 56px 80px 72px 100px;
+  overflow: hidden;
+}
+
+.hero .indhold {
+  display: grid;
+  grid-template-columns: 1fr 600px;
+  gap: 40px;
+  align-items: center;
+  max-width: 1260px;
+}
+
+.hero_tekst {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 24px;
+}
+
+.hero h1 {
+  max-width: 600px;
+}
+
+.hero h1 .kursiv {
+  display: block;
+  font-size: 78px;
+  letter-spacing: -1.95px;
+}
+
+.hero .lead {
+  max-width: 560px;
+}
+
+.knapper {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 12px;
+}
+
+.chips {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+}
+
+.chips .tag {
+  background-color: var(--bg-surface);
+  box-shadow: var(--shadow-sm);
+  transition: transform 0.15s, background-color 0.15s;
+}
+
+.chips .tag:hover {
+  transform: translateY(-3px);
+}
+
+.broedkrumme {
+  font-size: 15px;
+}
+
+.broedkrumme a {
+  text-decoration: none;
+}
+
+.broedkrumme a:hover {
+  text-decoration: underline;
+}
+
+/******** Orbit – lab-ringe (forside) *********/
+/* Målene kommer fra Figma-framen "Orbit · lab-ringe" (600 x 680).
+   Alt er i procent, så orbitten kan skaleres ned på mobil. */
+
+.orbit {
+  position: relative;
+  width: 100%;
+  max-width: 600px;
+  margin: 0 auto;
+}
+
+.orbit_ringe {
+  position: relative;
+  aspect-ratio: 600 / 680;
+}
+
+.orbit_sti {
+  position: absolute;
+  left: 8.33%;
+  top: 4.41%;
+  width: 83.33%;
+  aspect-ratio: 1 / 1;
+  border: 2px dashed rgba(107, 16, 64, 0.25);
+  border-radius: 50%;
+}
+
+.orbit_indre {
+  position: absolute;
+  left: 23.33%;
+  top: 17.65%;
+  width: 53.33%;
+  aspect-ratio: 1 / 1;
+  border: 34px solid rgba(107, 15, 64, 0.07);
+  border-radius: 50%;
+}
+
+/* banen drejer langsomt – og står stille, når musen er over */
+.orbit_bane {
+  position: absolute;
+  inset: 0;
+  animation: drej 70s linear infinite;
+}
+
+.ring_plads {
+  position: absolute;
+  width: 23.33%;
+  aspect-ratio: 1 / 1;
+  animation: drej 70s linear infinite reverse;
+}
+
+.orbit_ringe:hover .orbit_bane,
+.orbit_ringe:hover .ring_plads {
+  animation-play-state: paused;
+}
+
+.plads_maker { left: 38.33%; top: -5.88%; }
+.plads_media { left: 77.96%; top: 19.52%; }
+.plads_material { left: 62.83%; top: 60.63%; }
+.plads_circular { left: 13.84%; top: 60.63%; }
+.plads_lab16 { left: -1.29%; top: 19.52%; }
+
+.ring {
+  position: relative;
+  display: block;
+  width: 100%;
+  aspect-ratio: 1 / 1;
+  border-radius: 50%;
+  box-shadow: 0 0 0 8px var(--cream-50), var(--shadow-md);
+  transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.ring img {
+  width: 100%;
+  height: 100%;
+  border-radius: 50%;
+}
+
+/* foto, der toner frem ved hover */
+.ring .foto {
+  position: absolute;
+  inset: 0;
+  border-radius: 50%;
+  overflow: hidden;
+  opacity: 0;
+  transform: scale(0.85) rotate(-8deg);
+  transition: opacity 0.3s, transform 0.5s;
+}
+
+.ring .foto img {
+  object-fit: cover;
+}
+
+.ring .foto::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: radial-gradient(circle at 50% 120%, rgba(30, 26, 28, 0.75), transparent 60%);
+}
+
+.ring .foto span {
+  position: absolute;
+  z-index: 1;
+  left: 0;
+  right: 0;
+  bottom: 16%;
+  padding: 0 12%;
+  text-align: center;
+  color: var(--white);
+  font-family: var(--font-display);
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 1.1;
+  text-shadow: 0 1px 8px rgba(0, 0, 0, 0.6);
+}
+
+.ring:hover {
+  transform: scale(1.1);
+  box-shadow: 0 0 0 8px var(--cream-50), 0 0 0 12px var(--lab-color), var(--shadow-lg);
+  z-index: 5;
+}
+
+.ring:hover .foto {
+  opacity: 1;
+  transform: none;
+}
+
+/* grøn prik = åbent nu */
+.ring .live {
+  position: absolute;
+  top: 7%;
+  right: 7%;
+  width: 13%;
+  aspect-ratio: 1 / 1;
+  border-radius: 50%;
+  background-color: var(--status-available);
+  border: 3px solid var(--cream-50);
+  z-index: 2;
+}
+
+.ring .live.lukket {
+  background-color: var(--text-muted);
+}
+
+.orbit_center {
+  position: absolute;
+  left: 28%;
+  top: 21.76%;
+  width: 44%;
+  aspect-ratio: 1 / 1;
+  border-radius: 50%;
+  box-shadow: 0 0 0 14px var(--accent-pink), var(--shadow-lg);
+  z-index: 2;
+  transition: transform 0.3s;
+}
+
+.orbit_center:hover {
+  transform: scale(1.04);
+}
+
+.orbit_center img {
+  width: 100%;
+  height: 100%;
+  border-radius: 50%;
+}
+
+.fafi.orbit_fafi {
+  position: absolute;
+  left: 0;
+  top: 57.35%;
+  width: 16.53%;
+  z-index: 4;
+}
+
+/* Peek-kort – vises ved hover på en ring (tap på mobil) */
+.peek {
+  display: none;
+  position: absolute;
+  left: 16.67%;
+  top: 82.35%;
+  width: 66.67%;
+  padding: 14px 18px 16px;
+  border-radius: var(--radius-md);
+  border-top: 6px solid var(--lab-color);
+  background-color: var(--bg-surface);
+  box-shadow: var(--shadow-lg);
+  color: var(--text-default);
+  z-index: 6;
+}
+
+.peek.vis {
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+  animation: peek_ind 0.35s ease-out;
+}
+
+.peek_top {
+  display: flex;
+  justify-content: space-between;
+  gap: 8px;
+}
+
+.peek p {
+  font-size: 15px;
+  line-height: 1.5;
+  color: var(--text-muted);
+}
+
+.peek a {
+  font-family: var(--font-display);
+  font-weight: 600;
+  font-size: 17px;
+  line-height: 1;
+  letter-spacing: 0.17px;
+  color: var(--text-accent);
+  text-decoration: none;
+}
+
+.peek a:hover {
+  text-decoration: underline;
+}
+
+@keyframes drej {
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+@keyframes peek_ind {
+  from {
+    opacity: 0.3;
+    transform: translateY(6px);
+  }
+}
+
+/******** Quiz *********/
+
+.quiz_sektion {
+  padding: 80px 100px;
+}
+
+.quiz_boks {
+  display: grid;
+  grid-template-columns: 1fr 168px;
+  gap: 48px;
+  align-items: center;
+  padding: 44px 48px;
+  border-radius: var(--radius-lg);
+  background-color: var(--bg-surface);
+  box-shadow: var(--shadow-md);
+}
+
+.quiz_boks .sektion_top {
+  margin-bottom: 20px;
+}
+
+.progress {
+  display: flex;
+  gap: 6px;
+  margin-bottom: 20px;
+}
+
+.progress span {
+  flex: 1;
+  height: 6px;
+  border-radius: 3px;
+  background-color: var(--border-default);
+  transition: background-color 0.3s;
+}
+
+.progress span.fyldt {
+  background-color: var(--action-primary);
+}
+
+.quiz_spoergsmaal {
+  /* Heading/2XL */
+  font-family: var(--font-display);
+  font-weight: 600;
+  font-size: 44px;
+  line-height: 1.1;
+  letter-spacing: -0.44px;
+  margin-bottom: 20px;
+}
+
+.quiz_tekst {
+  font-size: 15px;
+  line-height: 1.5;
+  color: var(--ink-700);
+  margin-bottom: 20px;
+  max-width: 620px;
+}
+
+.svar {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+
+.svar button {
+  width: 370px;
+  max-width: 100%;
+  padding: 14px 16px;
+  border: 2px solid #d9d1d6;
+  border-radius: var(--radius-md);
+  background-color: var(--bg-page);
+  font-family: var(--font-body);
+  font-size: 15px;
+  line-height: 1.5;
+  text-align: left;
+  cursor: pointer;
+  transition: border-color 0.15s, transform 0.15s, background-color 0.15s;
+}
+
+.svar button:hover {
+  border-color: var(--action-primary);
+  background-color: var(--bg-surface);
+  transform: translateY(-2px);
+}
+
+/* knapperne i resultatet skal ligne rigtige knapper */
+.svar .knap {
+  width: auto;
+  border-color: transparent;
+}
+
+.svar .knap_ghost {
+  border-color: currentColor;
+  color: var(--text-accent);
+}
+
+.quiz_side {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.quiz_side .fafi {
+  width: 168px;
+}
+
+.quiz_side .lab_logo {
+  width: 168px;
+  filter: drop-shadow(0 16px 30px rgba(46, 6, 25, 0.25));
+  animation: pop 0.6s cubic-bezier(0.34, 1.56, 0.64, 1);
+}
+
+@keyframes pop {
+  from {
+    transform: scale(0.4) rotate(-30deg);
+    opacity: 0;
+  }
+}
+
+/******** Alle labs – lab-kort *********/
+
+#labs .sektion_top {
+  margin-bottom: 40px;
+}
+
+.lab_grid {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 24px;
+}
+
+.lab_kort {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 12px;
+  width: 260px;
+  padding: 20px 20px 24px;
+  border-radius: var(--radius-lg);
+  background-color: var(--bg-surface);
+  text-decoration: none;
+  transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.lab_kort:hover {
+  transform: translateY(-6px);
+  box-shadow: var(--shadow-lg);
+}
+
+.lab_kort .foto {
+  width: 220px;
+  height: 220px;
+  border-radius: 50%;
+  object-fit: cover;
+  border: 10px solid var(--lab-color);
+}
+
+.lab_kort .lab_logo {
+  position: absolute;
+  top: 8px;
+  right: 8px;
+  width: 68px;
+  filter: drop-shadow(0 6px 12px rgba(46, 6, 25, 0.3));
+  transition: transform 0.3s;
+}
+
+.lab_kort:hover .lab_logo {
+  transform: rotate(-12deg) scale(1.1);
+}
+
+.lab_kort p {
+  font-size: 15px;
+  line-height: 1.5;
+  color: var(--text-muted);
+}
+
+.lab_kort.markeret {
+  outline: 4px solid var(--lab-color);
+}
+
+/******** Fafi sektion (forside) *********/
+
+.fafi_grid {
+  display: grid;
+  grid-template-columns: 320px 1fr;
+  gap: 72px;
+  align-items: center;
+}
+
+.fafi_scene {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 320px;
+  height: 320px;
+  border-radius: 50%;
+  background-color: var(--bg-page);
+  box-shadow: 0 0 0 22px rgba(240, 138, 156, 0.3);
+}
+
+.fafi_scene .fafi {
+  width: 184px;
+}
+
+.fafi_grid .sektion_top {
+  margin-bottom: 20px;
+}
+
+.forslag {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+
+.forslag button {
+  padding: 12px 18px;
+  border: 1.5px solid rgba(255, 255, 255, 0.25);
+  border-radius: 18px 18px 18px 4px;
+  background-color: rgba(255, 255, 255, 0.08);
+  color: var(--text-on-dark);
+  font-family: var(--font-body);
+  font-size: 15px;
+  line-height: 1.5;
+  text-align: left;
+  cursor: pointer;
+  transition: background-color 0.15s, color 0.15s, transform 0.15s;
+}
+
+.forslag button:hover {
+  background-color: var(--accent-pink);
+  color: var(--text-default);
+  transform: translateY(-3px);
+}
+
+/******** Lab-hero (Tech & Story Lab og lab.html) *********/
+
+.lab_hero {
+  padding: 80px 100px 120px;
+  background-color: var(--lab-color);
+  color: var(--text-on-dark);
+}
+
+.lab_hero .indhold {
+  display: grid;
+  grid-template-columns: 1fr 540px;
+  gap: 48px;
+  align-items: center;
+}
+
+.lab_hero .hero_tekst {
+  gap: 22px;
+}
+
+.lab_hero h1 {
+  max-width: 600px;
+}
+
+.lab_hero h1 .kursiv {
+  display: block;
+  color: var(--accent-pink);
+}
+
+.lab_hero .eyebrow {
+  color: var(--accent-pink);
+}
+
+.lab_hero .lead {
+  color: var(--text-on-dark);
+  max-width: 540px;
+}
+
+/* Collage – 5 cirkler med farvet ring (Figma: "Collage · ringe" 540 x 540) */
+.collage {
+  position: relative;
+  width: 100%;
+  max-width: 540px;
+  aspect-ratio: 1 / 1;
+  margin: 0 auto;
+}
+
+.collage_billede {
+  position: absolute;
+  display: block;
+  border-radius: 50%;
+  text-decoration: none;
+  transition: transform 0.3s;
+}
+
+.collage_billede:hover {
+  transform: scale(1.07);
+  z-index: 2;
+}
+
+.collage_billede img {
+  width: 100%;
+  aspect-ratio: 1 / 1;
+  border-radius: 50%;
+  object-fit: cover;
+  border: 8px solid var(--c);
+}
+
+.collage_billede .tag {
+  position: absolute;
+  left: 50%;
+  bottom: -14px;
+  transform: translateX(-50%);
+  padding: 7px 12px;
+  background-color: var(--c);
+  white-space: nowrap;
+}
+
+.c_podcast { left: 22.2%; top: 17.8%; width: 55.6%; }
+.c_foto { left: 0; top: 0; width: 31.5%; }
+.c_vr { left: 68.5%; top: 5.6%; width: 29.6%; }
+.c_film { left: 1.9%; top: 66.7%; width: 32.4%; }
+.c_360 { left: 69.4%; top: 69.4%; width: 29.6%; }
+
+/* stort logo på lab.html */
+.logo_stor {
+  position: relative;
+  width: 80%;
+  max-width: 420px;
+  margin: 0 auto;
+}
+
+.logo_stor .lab_logo {
+  width: 100%;
+  border-radius: 50%;
+  box-shadow: 0 0 0 12px var(--cream-50), 0 0 0 40px rgba(251, 247, 234, 0.18), var(--shadow-lg);
+}
+
+.logo_stor .foto {
+  position: absolute;
+  right: -8%;
+  bottom: -6%;
+  width: 42%;
+  aspect-ratio: 1 / 1;
+  border-radius: 50%;
+  object-fit: cover;
+  border: 8px solid var(--cream-50);
+  box-shadow: var(--shadow-lg);
+}
+
+.lab_hero .tag {
+  background-color: rgba(255, 255, 255, 0.2);
+  color: inherit;
+}
+
+/******** Infobar *********/
+
+.infobar {
+  position: relative;
+  z-index: 2;
+  padding: 0 100px;
+  margin-top: -44px;
+}
+
+.info_boks {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  max-width: 1240px;
+  margin: 0 auto;
+  border-radius: var(--radius-lg);
+  background-color: var(--bg-surface);
+  box-shadow: var(--shadow-md);
+}
+
+.info_punkt {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  padding: 22px 24px;
+}
+
+.info_punkt span {
+  font-size: 26px;
+  line-height: 1.2;
+}
+
+.info_punkt b {
+  display: block;
+  font-family: var(--font-display);
+  font-weight: 600;
+  font-size: 20px;
+  line-height: 1.2;
+}
+
+/******** Kort *********/
+
+.kort {
+  background-color: var(--bg-surface);
+  border-radius: var(--radius-lg);
+  box-shadow: var(--shadow-sm);
+  overflow: hidden;
+}
+
+.kort_tekst {
+  padding: 20px 24px 24px;
+}
+
+/* Pakke-kort */
+
+.pakke {
+  display: flex;
+  flex-direction: column;
+}
+
+.pakke img {
+  width: 100%;
+  height: 210px;
+  object-fit: cover;
+}
+
+.pakke .kort_tekst {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  flex-grow: 1;
+  gap: 12px;
+}
+
+.pakke p {
+  font-size: 15px;
+  line-height: 1.5;
+}
+
+.pakke ul {
+  list-style: none;
+  font-size: 15px;
+  line-height: 1.5;
+}
+
+.pakke li.ikke {
+  color: var(--text-muted);
+}
+
+.pakke li.fjernet {
+  text-decoration: line-through;
+  color: var(--text-muted);
+}
+
+.pakke li button {
+  margin-left: 6px;
+  border: 0;
+  background: none;
+  color: var(--text-accent);
+  font-size: 13px;
+  cursor: pointer;
+}
+
+.tilpas_liste button {
+  display: none;
+}
+
+.tilpas_liste.aaben button {
+  display: inline;
+}
+
+.pakke .knapper {
+  gap: 8px;
+  margin-top: auto;
+}
+
+/******** Lån i 3 trin *********/
+
+.trin {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 10px;
+  padding: 28px;
+  border-radius: var(--radius-lg);
+  background-color: rgba(255, 255, 255, 0.06);
+}
+
+.trin_nr {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 56px;
+  height: 56px;
+  border-radius: 50%;
+  border: 6px solid var(--accent-pink);
+  background-color: var(--bg-page);
+  color: var(--text-accent);
+  font-family: var(--font-display);
+  font-weight: 600;
+  font-size: 26px;
+}
+
+.trin p {
+  font-size: 15px;
+  line-height: 1.5;
+  max-width: 300px;
+}
+
+.trin .lille {
+  color: var(--accent-pink);
+}
+
+.under_trin {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 12px;
+  margin-top: 48px;
+}
+
+/******** Workshops / events *********/
+
+.events {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.event {
+  display: flex;
+  align-items: center;
+  gap: 24px;
+  padding: 16px 24px;
+  border-radius: var(--radius-lg);
+  background-color: var(--bg-surface);
+  transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.event:hover {
+  transform: translateX(6px);
+  box-shadow: var(--shadow-md);
+}
+
+.dato {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  flex-shrink: 0;
+  width: 80px;
+  height: 80px;
+  border-radius: 50%;
+  border: 5px solid var(--c, var(--accent-pink));
+}
+
+.dato b {
+  font-family: var(--font-display);
+  font-weight: 600;
+  font-size: 44px;
+  line-height: 1.1;
+  letter-spacing: -0.44px;
+}
+
+.event_tekst {
+  flex-grow: 1;
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+}
+
+.event_tekst p {
+  font-size: 15px;
+  line-height: 1.5;
+}
+
+.tilmeldt {
+  background-color: var(--action-primary);
+  color: var(--text-on-dark);
+}
+
+/******** Om labbet *********/
+
+.info_kort {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  padding: 24px;
+  border-radius: var(--radius-lg);
+  background-color: var(--bg-surface-alt);
+}
+
+.info_kort b {
+  font-family: var(--font-display);
+  font-weight: 600;
+  font-size: 20px;
+  line-height: 1.2;
+}
+
+.info_kort p {
+  font-size: 15px;
+  line-height: 1.5;
+  color: var(--text-muted);
+}
+
+.info_kort a {
+  color: var(--text-accent);
+  font-weight: 600;
+}
+
+/******** Lab-side (lab.html) *********/
+
+.kan_skabe {
+  padding: 32px 24px;
+  border-radius: var(--radius-lg);
+  border-top: 8px solid var(--lab-color);
+  background-color: var(--bg-surface);
+  font-family: var(--font-display);
+  font-weight: 600;
+  font-size: 26px;
+  line-height: 1.2;
+}
+
+.note {
+  margin-top: 32px;
+  padding: 16px 24px;
+  border-radius: var(--radius-md);
+  background-color: var(--yellow-100);
+  font-size: 15px;
+}
+
+.galleri img {
+  width: 100%;
+  aspect-ratio: 4 / 3;
+  object-fit: cover;
+  border-radius: var(--radius-md);
+}
+
+.logo_raekke {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 24px;
+}
+
+.logo_raekke a {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 10px;
+  width: 140px;
+  text-align: center;
+  font-family: var(--font-display);
+  font-weight: 600;
+  font-size: 15px;
+  line-height: 1.2;
+  text-decoration: none;
+}
+
+.logo_raekke img {
+  width: 120px;
+  transition: transform 0.3s;
+}
+
+.logo_raekke a:hover img {
+  transform: rotate(-8deg) scale(1.08);
+}
+
+/******** Fafi – maskotten lever *********/
+/* Tegningen sættes ind af script.js (fra fafi.js). Delene har hver sin klasse. */
+
+.fafi {
+  display: inline-block;
+  width: 160px;
+  line-height: 0;
+  cursor: pointer;
+}
+
+.fafi .fafi_svg {
+  display: block;
+  width: 100%;
+  height: auto;
+  overflow: visible;
+  fill: var(--ink-900);
+}
+
+/* hele Fafi hopper (squash & stretch) */
+.fafi_alt {
+  transform-box: fill-box;
+  transform-origin: 50% 100%;
+  animation: fafi_hop 3.2s cubic-bezier(0.45, 0, 0.55, 1) infinite;
+}
+
+/* øjet blinker og følger musen (--ex/--ey sættes i script.js) */
+.fafi_oeje {
+  transform-box: fill-box;
+  transform-origin: center;
+  transform: translate(var(--ex, 0px), var(--ey, 0px));
+  transition: transform 0.25s;
+  animation: fafi_blink 4.6s infinite;
+}
+
+/* blitz-strålerne gnistrer – hver stråle lidt forskudt */
+.fafi_straale {
+  transform-box: fill-box;
+  transform-origin: 0% 100%;
+  animation: fafi_gnist 1.8s ease-in-out infinite;
+  animation-delay: calc(var(--i) * 90ms);
+}
+
+/* den lille prik pulserer som en REC-lampe */
+.fafi_prik {
+  animation: fafi_prik 1.6s ease-in-out infinite;
+}
+
+.fafi_soeger {
+  transform-box: fill-box;
+}
+
+.fafi:hover .fafi_alt {
+  animation: fafi_hop_hurtig 0.6s cubic-bezier(0.34, 1.56, 0.64, 1) infinite alternate;
+}
+
+.fafi:hover .fafi_straale {
+  animation-duration: 0.5s;
+}
+
+/* klik = Fafi tager et billede */
+.fafi.knips .fafi_alt {
+  animation: fafi_knips 0.5s cubic-bezier(0.34, 1.56, 0.64, 1);
+}
+
+.fafi.knips .fafi_soeger {
+  animation: fafi_soeger 0.5s ease-out;
+}
+
+@keyframes fafi_hop {
+  0%,
+  100% {
+    transform: translateY(0) scale(1, 1);
+  }
+  40% {
+    transform: translateY(-4%) scale(0.98, 1.03);
+  }
+  55% {
+    transform: translateY(0) scale(1.04, 0.96);
+  }
+  65% {
+    transform: translateY(0) scale(1, 1);
+  }
+}
+
+@keyframes fafi_hop_hurtig {
+  from {
+    transform: translateY(0) rotate(-3deg) scale(1.03, 0.97);
+  }
+  to {
+    transform: translateY(-9%) rotate(4deg) scale(0.97, 1.04);
+  }
+}
+
+@keyframes fafi_knips {
+  0% {
+    transform: scale(1);
+  }
+  30% {
+    transform: scale(1.12, 0.88);
+  }
+  60% {
+    transform: scale(0.94, 1.08) translateY(-6%);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
+
+@keyframes fafi_blink {
+  0%,
+  90%,
+  100% {
+    scale: 1 1;
+  }
+  93% {
+    scale: 1 0.08;
+  }
+  96% {
+    scale: 1 1;
+  }
+}
+
+@keyframes fafi_gnist {
+  0%,
+  100% {
+    opacity: 1;
+    transform: scale(1);
+  }
+  50% {
+    opacity: 0.35;
+    transform: scale(0.7);
+  }
+}
+
+@keyframes fafi_prik {
+  50% {
+    opacity: 0.3;
+  }
+}
+
+@keyframes fafi_soeger {
+  0% {
+    fill: var(--ink-900);
+  }
+  20% {
+    fill: var(--yellow-400);
+  }
+  100% {
+    fill: var(--ink-900);
+  }
+}
+
+/* blitz over hele skærmen */
+.blitz {
+  position: fixed;
+  inset: 0;
+  background-color: var(--white);
+  opacity: 0;
+  pointer-events: none;
+  z-index: 300;
+}
+
+.blitz.aktiv {
+  animation: blitz 0.55s ease-out;
+}
+
+@keyframes blitz {
+  0% {
+    opacity: 0.85;
+  }
+  100% {
+    opacity: 0;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .fafi_alt,
+  .fafi_oeje,
+  .fafi_straale,
+  .fafi_prik,
+  .orbit_bane,
+  .ring_plads {
+    animation: none !important;
+  }
+}
+
+/******** Fafi chat (popup) *********/
+
+.chat {
+  display: none;
+  position: fixed;
+  right: 20px;
+  bottom: 20px;
+  z-index: 100;
+  width: 410px;
+  max-width: calc(100% - 24px);
+  height: 680px;
+  max-height: calc(100vh - 40px);
+  flex-direction: column;
+  border-radius: var(--radius-lg);
+  overflow: hidden;
+  background-color: var(--bg-page);
+  box-shadow: 0 30px 80px rgba(46, 5, 26, 0.35);
+}
+
+.chat.aaben {
+  display: flex;
+  animation: chat_ind 0.35s cubic-bezier(0.34, 1.56, 0.64, 1);
+}
+
+@keyframes chat_ind {
+  from {
+    opacity: 0;
+    transform: scale(0.8) translateY(30px);
+  }
+}
+
+.chat_top {
+  display: flex;
+  align-items: center;
+  gap: 14px;
+  padding: 16px;
+  background-color: var(--action-primary);
+  color: var(--text-on-dark);
+}
+
+.chat_avatar {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-shrink: 0;
+  width: 68px;
+  height: 68px;
+  border-radius: 20px;
+  background-color: var(--white);
+}
+
+.chat_avatar img {
+  width: 58px;
+}
+
+.chat_navn {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+}
+
+.chat_navn b {
+  font-family: var(--font-display);
+  font-weight: 600;
+  font-size: 44px;
+  line-height: 1.1;
+  letter-spacing: -0.44px;
+}
+
+.chat_navn b .kursiv {
+  font-family: var(--font-accent);
+  font-weight: 500;
+  font-size: 16px;
+  letter-spacing: -0.16px;
+  color: var(--accent-pink);
+}
+
+.chat_navn .lille {
+  color: var(--pink-200);
+}
+
+.chat_top button {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 36px;
+  height: 36px;
+  border: 0;
+  border-radius: 50%;
+  background-color: rgba(255, 255, 255, 0.12);
+  color: var(--text-on-dark);
+  font-size: 18px;
+  cursor: pointer;
+}
+
+.chat_top button:hover {
+  background-color: rgba(255, 255, 255, 0.25);
+}
+
+.chat_knapper {
+  display: flex;
+  gap: 6px;
+  margin-left: auto;
+  align-self: flex-start;
+}
+
+.beskeder {
+  flex-grow: 1;
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  padding: 20px 16px 12px;
+  overflow-y: auto;
+  scroll-behavior: smooth;
+}
+
+.besked {
+  max-width: 320px;
+  padding: 12px 15px;
+  border-radius: 20px;
+  font-size: 15px;
+  line-height: 1.5;
+  animation: besked_ind 0.35s ease-out;
+}
+
+.besked p + p,
+.besked p + ul,
+.besked ul + p,
+.besked p + ol,
+.besked ol + p {
+  margin-top: 8px;
+}
+
+.besked ul,
+.besked ol {
+  padding-left: 20px;
+}
+
+.besked strong,
+.besked a {
+  color: var(--text-accent);
+}
+
+.besked .tip {
+  margin-top: 10px;
+  padding: 10px 12px;
+  border-radius: 12px;
+  background-color: var(--yellow-100);
+  font-size: 13px;
+}
+
+.fra_fafi {
+  align-self: flex-start;
+  background-color: var(--bg-surface);
+  border-bottom-left-radius: 6px;
+  box-shadow: var(--shadow-sm);
+}
+
+.fra_bruger {
+  align-self: flex-end;
+  background-color: var(--action-primary);
+  color: var(--text-on-dark);
+  border-bottom-right-radius: 6px;
+}
+
+/* "Fafi skriver" – tre prikker */
+.skriver {
+  display: flex;
+  gap: 5px;
+  padding: 16px 18px;
+}
+
+.skriver i {
+  width: 8px;
+  height: 8px;
+  border-radius: 50%;
+  background-color: var(--rose-500);
+  animation: prik_hop 1s infinite;
+}
+
+.skriver i:nth-child(2) {
+  animation-delay: 0.15s;
+}
+
+.skriver i:nth-child(3) {
+  animation-delay: 0.3s;
+}
+
+@keyframes besked_ind {
+  from {
+    opacity: 0;
+    transform: translateY(8px);
+  }
+}
+
+@keyframes prik_hop {
+  0%,
+  60%,
+  100% {
+    transform: translateY(0);
+    opacity: 0.5;
+  }
+  30% {
+    transform: translateY(-6px);
+    opacity: 1;
+  }
+}
+
+.hurtige {
+  display: flex;
+  gap: 8px;
+  padding: 0 16px 12px;
+  overflow-x: auto;
+  scrollbar-width: none;
+}
+
+.hurtige button {
+  flex-shrink: 0;
+  padding: 8px 14px;
+  border: 1.5px solid var(--action-primary);
+  border-radius: var(--radius-pill);
+  background-color: var(--bg-surface);
+  color: var(--text-accent);
+  font-family: var(--font-body);
+  font-weight: 600;
+  font-size: 13px;
+  line-height: 1.3;
+  cursor: pointer;
+  transition: background-color 0.15s, color 0.15s;
+}
+
+.hurtige button:hover {
+  background-color: var(--action-primary);
+  color: var(--text-on-dark);
+}
+
+.chat_form {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  padding: 12px;
+  background-color: var(--bg-surface);
+}
+
+.chat_form input {
+  flex-grow: 1;
+  min-width: 0;
+  padding: 13px 18px;
+  border: 1.5px solid var(--border-default);
+  border-radius: var(--radius-pill);
+  background-color: var(--bg-page);
+  font-family: var(--font-body);
+  font-size: 15px;
+}
+
+.chat_form input:focus {
+  outline: none;
+  border-color: var(--action-primary);
+}
+
+.chat_form button {
+  flex-shrink: 0;
+  width: 46px;
+  height: 46px;
+  border: 0;
+  border-radius: 50%;
+  background-color: var(--action-cta);
+  font-size: 20px;
+  cursor: pointer;
+  transition: background-color 0.15s, transform 0.15s;
+}
+
+.chat_form button:hover {
+  background-color: var(--action-cta-hover);
+  transform: rotate(-12deg) scale(1.06);
+}
+
+.chat_note {
+  padding: 0 12px 10px;
+  background-color: var(--bg-surface);
+  text-align: center;
+  font-size: 11px;
+  color: var(--text-muted);
+}
+
+/******** Toast (lille besked nederst) *********/
+
+.toast {
+  position: fixed;
+  left: 50%;
+  bottom: 28px;
+  z-index: 120;
+  padding: 14px 22px;
+  border-radius: var(--radius-pill);
+  background-color: var(--ink-900);
+  color: var(--text-on-dark);
+  font-weight: 600;
+  font-size: 15px;
+  box-shadow: var(--shadow-lg);
+  transform: translate(-50%, 140%);
+  visibility: hidden;
+  transition: transform 0.4s cubic-bezier(0.34, 1.56, 0.64, 1), visibility 0.4s;
+}
+
+.toast.vis {
+  transform: translate(-50%, 0);
+  visibility: visible;
+}
+
+/******** Footer *********/
+
+footer {
+  padding: 64px 100px;
+  background-color: var(--bg-footer);
+  color: var(--pink-200);
+}
+
+footer .grid_1-1-1 {
+  max-width: 1240px;
+  margin: 0 auto;
+  gap: 48px;
+}
+
+footer h4 {
+  margin-bottom: 12px;
+  color: var(--text-on-dark);
+}
+
+footer p,
+footer li {
+  font-size: 15px;
+  line-height: 1.5;
+}
+
+footer ul {
+  list-style: none;
+}
+
+footer a {
+  text-decoration: none;
+}
+
+footer a:hover {
+  color: var(--text-on-dark);
+  text-decoration: underline;
+}
+
+/******************************************/
+/**************** Tablet ******************/
+/******************************************/
+
+@media screen and (max-width: 1100px) {
+  header {
+    padding: 20px 40px;
+    gap: 32px;
+  }
+
+  .logo img {
+    width: 200px;
+    height: auto;
+  }
+
+  .menu {
+    gap: 24px;
+  }
+
+  .menu a {
+    font-size: 17px;
+  }
+
+  section,
+  footer,
+  .quiz_sektion {
+    padding: 72px 40px;
+  }
+
+  .hero {
+    padding: 40px 40px 56px;
+  }
+
+  .hero .indhold,
+  .lab_hero .indhold {
+    grid-template-columns: 1fr;
+    gap: 40px;
+  }
+
+  .orbit {
+    max-width: 520px;
+  }
+
+  .lab_hero {
+    padding: 56px 40px 96px;
+  }
+
+  .infobar {
+    padding: 0 40px;
+  }
+
+  .info_boks {
+    grid-template-columns: 1fr 1fr;
+  }
+
+  h1 {
+    font-size: 72px;
+  }
+
+  .hero h1 .kursiv {
+    font-size: 60px;
+  }
+
+  .grid_1-1-1-1 {
+    grid-template-columns: 1fr 1fr;
+  }
+
+  .fafi_grid {
+    grid-template-columns: 1fr;
+    gap: 40px;
+  }
+}
+
+/******************************************/
+/**************** Mobil *******************/
+/******************************************/
+
+@media screen and (max-width: 800px) {
+  header {
+    padding: 12px 16px;
+    gap: 12px;
+    position: relative;
+  }
+
+  .logo img {
+    width: 170px;
+  }
+
+  nav {
+    flex-direction: row;
+    align-items: center;
+    justify-content: flex-end;
+    gap: 12px;
+  }
+
+  .menu {
+    display: none;
+  }
+
+  /* kun Fafi-knappen bliver vist på mobil */
+  .servicemenu {
+    gap: 0;
+  }
+
+  .servicemenu li {
+    display: none;
+  }
+
+  .servicemenu li:last-child {
+    display: block;
+  }
+
+  .spoerg_knap {
+    padding: 4px;
+    gap: 0;
+  }
+
+  .spoerg_knap .avatar {
+    width: 36px;
+    height: 36px;
+  }
+
+  .spoerg_knap .avatar img {
+    width: 26px;
+  }
+
+  .spoerg_knap span.tekst {
+    display: none;
+  }
+
+  .burger {
+    display: block;
+  }
+
+  .burger.active .line:nth-child(1) {
+    transform: rotate(45deg) translate(5px, 5px);
+    transition: 0.2s linear;
+  }
+
+  .burger.active .line:nth-child(2) {
+    opacity: 0;
+    transition: 0.15s linear;
+  }
+
+  .burger.active .line:nth-child(3) {
+    transform: rotate(-45deg) translate(5px, -5px);
+    transition: 0.2s linear;
+  }
+
+  nav.active .menu {
+    display: block;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    width: 100%;
+    padding: 10px 0;
+    background-color: #fdbead;
+    box-shadow: 0 10px 10px rgba(0, 0, 0, 0.1);
+    z-index: 20;
+  }
+
+  nav.active .menu li {
+    margin: 10px 16px;
+  }
+
+  nav.active .menu a {
+    font-size: 22px;
+  }
+
+  section,
+  footer,
+  .quiz_sektion {
+    padding: 56px 16px;
+  }
+
+  .hero {
+    padding: 32px 16px 56px;
+  }
+
+  .lab_hero {
+    padding: 40px 16px 80px;
+  }
+
+  .infobar {
+    padding: 0 16px;
+  }
+
+  h1 {
+    font-size: 52px;
+    letter-spacing: -1.5px;
+  }
+
+  .hero h1 .kursiv {
+    font-size: 44px;
+    letter-spacing: -1px;
+  }
+
+  h2 {
+    font-size: 40px;
+    letter-spacing: -1px;
+  }
+
+  .lead,
+  .hero .lead {
+    font-size: 17px;
+  }
+
+  .quiz_spoergsmaal {
+    font-size: 30px;
+  }
+
+  .grid_1-1,
+  .grid_1-1-1,
+  .grid_1-1-1-1,
+  .info_boks,
+  .quiz_boks {
+    grid-template-columns: 1fr;
+  }
+
+  .quiz_boks {
+    padding: 28px 20px;
+    gap: 24px;
+  }
+
+  .quiz_side {
+    order: -1;
+  }
+
+  .quiz_side .fafi {
+    width: 120px;
+  }
+
+  .svar button {
+    width: 100%;
+  }
+
+  /* orbit: ringene skaleres i procent, peek-kortet kommer ned under */
+  .orbit {
+    max-width: 360px;
+  }
+
+  .orbit_indre {
+    border-width: 20px;
+  }
+
+  .ring {
+    box-shadow: 0 0 0 5px var(--cream-50), var(--shadow-md);
+  }
+
+  .orbit_center {
+    box-shadow: 0 0 0 9px var(--accent-pink), var(--shadow-lg);
+  }
+
+  .ring .foto span {
+    font-size: 11px;
+  }
+
+  .peek {
+    position: static;
+    width: 100%;
+    margin-top: 20px;
+  }
+
+  .peek.vis {
+    animation: none;
+  }
+
+  .lab_kort {
+    width: 100%;
+    align-items: center;
+    text-align: center;
+  }
+
+  .fafi_scene {
+    width: 220px;
+    height: 220px;
+    margin: 0 auto;
+    box-shadow: 0 0 0 14px rgba(240, 138, 156, 0.3);
+  }
+
+  .fafi_scene .fafi {
+    width: 126px;
+  }
+
+  .forslag button {
+    width: 100%;
+  }
+
+  .collage_billede img {
+    border-width: 6px;
+  }
+
+  .collage_billede .tag {
+    padding: 5px 10px;
+    font-size: 12px;
+    bottom: -10px;
+  }
+
+  .event {
+    flex-wrap: wrap;
+    gap: 14px;
+  }
+
+  .event .knap {
+    width: 100%;
+  }
+
+  .logo_stor {
+    width: 70%;
+  }
+
+  footer .grid_1-1-1 {
+    gap: 32px;
+  }
+}
+
+@media screen and (max-width: 520px) {
+  .chat,
+  .chat.aaben {
+    right: 0;
+    bottom: 0;
+    width: 100%;
+    max-width: 100%;
+    height: 100%;
+    max-height: 100%;
+    border-radius: 0;
+  }
+}
+
+/* lyse lab-farver (Media Lab og Lab 16) skal have mørk tekst i heroen */
+.lab_hero {
+  color: var(--lab-on-color);
+}
+
+.lab_hero .lead {
+  color: inherit;
+}
+
+.tema_media .lab_hero .eyebrow,
+.tema_media .lab_hero .kursiv,
+.tema_lab16 .lab_hero .eyebrow,
+.tema_lab16 .lab_hero .kursiv {
+  color: var(--ink-900);
+}

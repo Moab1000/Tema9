@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html lang="da">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="robots" content="noindex">
+    <meta name="description" content="Et af EK's tværgående labs – samme skabelon som Tech & Story Lab, eget logo og egen farve.">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Encode+Sans+Condensed:wght@400;600;700&family=Encode+Sans:wght@300;400;500;600&family=Zilla+Slab:ital,wght@0,400;1,500;1,600&display=swap"
+        rel="stylesheet">
+
+    <link rel="stylesheet" href="general.css">
+    <link rel="stylesheet" href="layout.css">
+
+    <title>EK Labs · Lab</title>
+
+    <link rel="icon" type="image/svg+xml" href="imgs/fafi_badge.svg">
+</head>
+
+<!-- Siden er en skabelon: script.js læser ?id= i adressen og udfylder teksterne.
+     Klassen på body (fx tema_maker) skifter lab-farverne – ligesom en mode i Figma. -->
+
+<body>
+
+    <header>
+        <div class="logo">
+            <a href="index.html" aria-label="EK – forside">
+                <img src="imgs/ek_logo.svg" alt="Erhvervsakademi København">
+            </a>
+        </div>
+
+        <nav>
+            <ul class="servicemenu">
+                <li><a href="https://ek.itslearning.com/" target="_blank" rel="noopener">ItsLearning</a></li>
+                <li><a href="https://cphbusiness.mrooms.net/" target="_blank" rel="noopener">Moodle</a></li>
+                <li><a href="https://mit.ek.dk/studiehaandbog/kontakt-ek" target="_blank" rel="noopener">Kontakt</a>
+                </li>
+                <li>
+                    <button class="spoerg_knap aabenChat" aria-label="Spørg EK's AI">
+                        <span class="tekst">Spørg EK’s AI</span>
+                        <span class="avatar"><img src="imgs/fafi_oeje.svg" alt=""></span>
+                    </button>
+                </li>
+            </ul>
+
+            <ul class="menu">
+                <li><a href="index.html">Håndbog</a></li>
+                <li><a href="index.html">Studiemiljø</a></li>
+                <li><a href="index.html">Vejledning</a></li>
+                <li><a href="index.html">Praktik og udveksling</a></li>
+                <li><a href="index.html" class="aktiv">EK Labs</a></li>
+            </ul>
+
+            <button class="burger" aria-label="Åbn menu">
+                <span class="line"></span>
+                <span class="line"></span>
+                <span class="line"></span>
+            </button>
+        </nav>
+    </header>
+
+    <main>
+
+        <!-- HERO -->
+        <section class="lab_hero">
+            <div class="indhold">
+
+                <div class="hero_tekst">
+                    <p class="broedkrumme"><a href="index.html">EK Labs</a> &nbsp;/&nbsp; <span
+                            class="lab_navn">Lab</span></p>
+                    <p class="eyebrow">◎ <span class="lab_campus">EK</span> · tværgående lab</p>
+                    <h1><span class="lab_navn">Lab</span><span class="kursiv lab_tagline"></span></h1>
+                    <p class="lead lab_beskrivelse"></p>
+
+                    <div class="knapper">
+                        <a href="#skabe" class="knap knap_cta">Se hvad du kan lave →</a>
+                        <button class="knap knap_ghost spoerg" data-spoergsmaal="Andre labs">Spørg Fafi om labbet</button>
+                    </div>
+
+                    <div class="chips lab_tags"></div>
+                </div>
+
+                <div class="logo_stor">
+                    <img src="" alt="" class="lab_logo">
+                    <img src="" alt="" class="foto lab_foto">
+                </div>
+
+            </div>
+        </section>
+
+        <!-- DET KAN DU SKABE -->
+        <section id="skabe">
+            <div class="indhold">
+                <div class="sektion_top">
+                    <p class="eyebrow">◎ Kom i gang</p>
+                    <h2>Det kan du <span class="kursiv">skabe her</span></h2>
+                </div>
+
+                <div class="grid_1-1-1 lab_kan_skabe">
+                    <!-- kortene bliver lavet i script.js -->
+                </div>
+
+                <p class="note">🧪 <b>Prototype:</b> Denne side er bygget med samme skabelon som Tech &amp; Story Lab.
+                    Indholdet her er eksempler – det rigtige indhold udfyldes af labbet selv, uden at designet skal
+                    ændres.</p>
+            </div>
+        </section>
+
+        <!-- STEMNING -->
+        <section class="lys">
+            <div class="indhold">
+                <div class="sektion_top">
+                    <p class="eyebrow">◎ Stemning</p>
+                    <h2>Se dig <span class="kursiv">omkring</span></h2>
+                </div>
+
+                <div class="grid_1-1-1 galleri lab_galleri">
+                    <!-- billederne bliver lavet i script.js -->
+                </div>
+            </div>
+        </section>
+
+        <!-- ANDRE LABS -->
+        <section>
+            <div class="indhold">
+                <div class="sektion_top" style="align-items: center; text-align: center; margin-left: auto; margin-right: auto;">
+                    <p class="eyebrow">◎ Alle EK Labs</p>
+                    <h2>Udforsk de <span class="kursiv">andre labs</span></h2>
+                </div>
+
+                <div class="logo_raekke lab_andre">
+                    <!-- logoerne bliver lavet i script.js -->
+                </div>
+            </div>
+        </section>
+
+    </main>
+
+    <footer>
+        <div class="grid_1-1-1">
+            <div>
+                <h4>EK Labs</h4>
+                <p>Seks labs, hvor studerende på EK går fra idé til noget, man kan røre, høre og se.</p>
+            </div>
+            <div>
+                <h4>Labs</h4>
+                <ul>
+                    <li><a href="tech_story_lab.html">Tech &amp; Story Lab</a></li>
+                    <li><a href="lab.html?id=maker">Maker Lab</a></li>
+                    <li><a href="lab.html?id=media">Media Lab</a></li>
+                    <li><a href="lab.html?id=circular_material">Circular Material Lab</a></li>
+                    <li><a href="lab.html?id=circular">Circular Lab</a></li>
+                    <li><a href="lab.html?id=lab16">Lab 16</a></li>
+                </ul>
+            </div>
+            <div>
+                <h4>Tech &amp; Story Lab</h4>
+                <p>EK Guldbergsgade, bygning A, A025<br>
+                    Man–tor 9.00–16.00 · Fre 9.00–15.00<br>
+                    <a href="tel:+4546460442">46 46 04 42</a><br>
+                    <a href="mailto:techandstorylab@ek.dk">techandstorylab@ek.dk</a>
+                </p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- FAFI CHAT -->
+    <div class="chat" role="dialog" aria-label="Chat med Fafi">
+        <div class="chat_top">
+            <div class="chat_avatar"><img src="imgs/fafi_oeje.svg" alt="Fafi"></div>
+            <div class="chat_navn">
+                <b>Fafi <span class="kursiv">din AI-guide</span></b>
+                <span class="lille">● Online · svarer med det samme</span>
+            </div>
+            <div class="chat_knapper">
+                <button class="nulstil_chat" title="Start forfra" aria-label="Start samtalen forfra">↺</button>
+                <button class="luk_chat" aria-label="Luk chat">✕</button>
+            </div>
+        </div>
+
+        <div class="beskeder"></div>
+
+        <div class="hurtige"></div>
+
+        <form class="chat_form" autocomplete="off">
+            <input type="text" placeholder="Spørg om udstyr, pakker, idéer…" aria-label="Skriv til Fafi"
+                maxlength="300">
+            <button type="submit" aria-label="Send">➤</button>
+        </form>
+        <p class="chat_note">Fafi er en prototype · demo-data om ledighed</p>
+    </div>
+
+    <div class="blitz"></div>
+    <div class="toast" role="status"></div>
+
+    <script src="fafi.js"></script>
+    <script src="script.js"></script>
+</body>
+
+</html>

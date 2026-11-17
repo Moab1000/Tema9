@@ -1,0 +1,347 @@
+<!DOCTYPE html>
+<html lang="da">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="robots" content="noindex">
+    <meta name="description"
+        content="EK Labs – seks tværgående labs for alle studerende på Erhvervsakademi København. Start i Tech & Story Lab.">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Encode+Sans+Condensed:wght@400;600;700&family=Encode+Sans:wght@300;400;500;600&family=Zilla+Slab:ital,wght@0,400;1,500;1,600&display=swap"
+        rel="stylesheet">
+
+    <link rel="stylesheet" href="general.css">
+    <link rel="stylesheet" href="layout.css">
+
+    <title>EK Labs</title>
+
+    <link rel="icon" type="image/svg+xml" href="imgs/fafi_badge.svg">
+</head>
+
+<body class="tema_tech_story">
+
+    <header>
+        <div class="logo">
+            <a href="index.html" aria-label="EK – forside">
+                <img src="imgs/ek_logo.svg" alt="Erhvervsakademi København">
+            </a>
+        </div>
+
+        <nav>
+            <ul class="servicemenu">
+
+
+                <li>
+                    <button class="spoerg_knap aabenChat" aria-label="Spørg EK's AI">
+                        <span class="tekst">Spørg EK’s AI</span>
+                        <span class="avatar"><img src="imgs/fafi_oeje.svg" alt=""></span>
+                    </button>
+                </li>
+            </ul>
+
+            <ul class="menu">
+                <li><a href="index.html">Håndbog</a></li>
+                <li><a href="index.html">Studiemiljø</a></li>
+                <li><a href="index.html">Vejledning</a></li>
+                <li><a href="index.html">Praktik og udveksling</a></li>
+                <li><a href="index.html" class="aktiv">EK Labs</a></li>
+            </ul>
+
+            <button class="burger" aria-label="Åbn menu">
+                <span class="line"></span>
+                <span class="line"></span>
+                <span class="line"></span>
+            </button>
+        </nav>
+    </header>
+
+    <main>
+
+        <!-- HERO -->
+        <section class="lys hero">
+            <div class="indhold">
+
+                <div class="hero_tekst">
+                    <p class="eyebrow">◎ EK Labs · 6 tværgående labs · for alle studerende</p>
+                    <h1>Seks labs.<span class="kursiv">Én idé er nok til at starte.</span></h1>
+                    <p class="lead">Lån udstyr, book studier og få hjælp af folk, der elsker at skabe – gratis. Start i
+                        Tech &amp; Story Lab, hvor podcasts, film, foto og VR bliver til færdige historier.</p>
+
+                    <div class="knapper">
+                        <a href="#quiz" class="knap knap_cta">🧭 Hvilket lab er du?</a>
+                    </div>
+
+                    <p class="lille">HVAD VIL DU LAVE?</p>
+                    <div class="chips">
+                        <a href="tech_story_lab.html#pakker" class="tag">🎙️ Podcast</a>
+                        <a href="tech_story_lab.html#pakker" class="tag">🎬 Film &amp; foto</a>
+                        <a href="lab.html?id=media" class="tag">🥽 VR &amp; game</a>
+                        <a href="lab.html?id=maker" class="tag">🧩 3D-print</a>
+                        <a href="lab.html?id=circular_material" class="tag">🧵 Redesign</a>
+                        <a href="lab.html?id=circular" class="tag">🌱 Bæredygtighed</a>
+                    </div>
+                </div>
+
+                <!-- Orbit: de 5 andre labs kredser om Tech & Story Lab -->
+                <div class="orbit">
+                    <div class="orbit_ringe">
+                        <div class="orbit_sti"></div>
+                        <div class="orbit_indre"></div>
+
+                        <div class="orbit_bane">
+                            <div class="ring_plads plads_maker tema_maker">
+                                <a href="lab.html?id=maker" class="ring" data-lab="maker" aria-label="Maker Lab">
+                                    <img src="imgs/logo_maker.svg" alt="Maker Lab logo">
+                                    <span class="foto"><img src="imgs/maker.jpg" alt=""><span>Byg det, du har
+                                            tegnet</span></span>
+                                    <span class="live"></span>
+                                </a>
+                            </div>
+                            <div class="ring_plads plads_media tema_media">
+                                <a href="lab.html?id=media" class="ring" data-lab="media" aria-label="Media Lab">
+                                    <img src="imgs/logo_media.svg" alt="Media Lab logo">
+                                    <span class="foto"><img src="imgs/360.jpg" alt=""><span>Træd ind i nye
+                                            verdener</span></span>
+                                    <span class="live"></span>
+                                </a>
+                            </div>
+                            <div class="ring_plads plads_material tema_circular_material">
+                                <a href="lab.html?id=circular_material" class="ring" data-lab="circular_material"
+                                    aria-label="Circular Material Lab">
+                                    <img src="imgs/logo_circular_material.svg" alt="Circular Material Lab logo">
+                                    <span class="foto"><img src="imgs/circular_material.jpg" alt=""><span>Giv materialer
+                                            et nyt liv</span></span>
+                                    <span class="live"></span>
+                                </a>
+                            </div>
+                            <div class="ring_plads plads_circular tema_circular">
+                                <a href="lab.html?id=circular" class="ring" data-lab="circular"
+                                    aria-label="Circular Lab">
+                                    <img src="imgs/logo_circular.svg" alt="Circular Lab logo">
+                                    <span class="foto"><img src="imgs/circular_lab.jpg" alt=""><span>Forretning, der
+                                            holder for fremtiden</span></span>
+                                    <span class="live"></span>
+                                </a>
+                            </div>
+                            <div class="ring_plads plads_lab16 tema_lab16">
+                                <a href="lab.html?id=lab16" class="ring" data-lab="lab16" aria-label="Lab 16">
+                                    <img src="imgs/logo_lab16.svg" alt="Lab 16 logo">
+                                    <span class="foto"><img src="imgs/lab16.jpg" alt=""><span>Eksperimentér på
+                                            Lygten</span></span>
+                                    <span class="live"></span>
+                                </a>
+                            </div>
+                        </div>
+
+                        <a href="tech_story_lab.html" class="orbit_center ring_center" data-lab="tech_story"
+                            aria-label="Tech & Story Lab – start her">
+                            <img src="imgs/labbet.png" alt="Tech & Story Lab logo">
+                        </a>
+
+                        <span class="fafi orbit_fafi" title="Klik på Fafi!"></span>
+                    </div>
+
+                    <div class="peek">
+                        <div class="peek_top">
+                            <span class="lille peek_campus">EK GULDBERGSGADE</span>
+                            <span class="lille groen aabent_status">● Åbent nu</span>
+                        </div>
+                        <h3 class="peek_navn">Tech &amp; Story Lab</h3>
+                        <p class="peek_tekst">Podcast-studie, foto- og videostudie, VR og eye tracking. Lån udstyr i
+                            færdige pakker.</p>
+                        <a href="tech_story_lab.html" class="peek_link">Gå til Tech &amp; Story Lab →</a>
+                    </div>
+                </div>
+
+            </div>
+        </section>
+
+        <!-- QUIZ -->
+        <section class="quiz_sektion" id="quiz">
+            <div class="indhold quiz_boks">
+                <div>
+                    <div class="sektion_top">
+                        <p class="eyebrow">◎ 20 sekunder · 3 spørgsmål</p>
+                        <h2>Hvilket lab <span class="kursiv">er du?</span></h2>
+                    </div>
+
+                    <div class="progress">
+                        <span class="fyldt"></span>
+                        <span></span>
+                        <span></span>
+                    </div>
+
+                    <p class="quiz_spoergsmaal">Hvad får dig til at glemme tiden?</p>
+                    <p class="quiz_tekst"></p>
+
+                    <div class="svar">
+                        <!-- knapperne bliver lavet i script.js -->
+                    </div>
+                </div>
+
+                <div class="quiz_side">
+                    <span class="fafi"></span>
+                </div>
+            </div>
+        </section>
+
+        <!-- ALLE LABS -->
+        <section id="labs">
+            <div class="indhold">
+                <div class="sektion_top">
+                    <p class="eyebrow">◎ Tværgående labs for alle studerende</p>
+                    <h2>Hvert lab har sin <span class="kursiv">superkraft</span></h2>
+                    <p class="lead">Samme system, eget logo og egen farve. Klik på et lab og se, hvad du kan skabe.</p>
+                </div>
+
+                <div class="lab_grid">
+                    <a href="tech_story_lab.html" class="lab_kort tema_tech_story" id="tech_story">
+                        <img src="imgs/podcast.jpg" alt="To personer optager podcast" class="foto">
+                        <img src="imgs/logo_tech_story.svg" alt="" class="lab_logo">
+                        <span class="tag">EK Guldbergsgade</span>
+                        <h3>Tech &amp; Story Lab</h3>
+                        <p>Fra idé til færdig historie</p>
+                    </a>
+
+                    <a href="lab.html?id=maker" class="lab_kort tema_maker" id="maker">
+                        <img src="imgs/maker.jpg" alt="Studerende bygger i Maker Lab" class="foto">
+                        <img src="imgs/logo_maker.svg" alt="" class="lab_logo">
+                        <span class="tag">EK Guldbergsgade</span>
+                        <h3>Maker Lab</h3>
+                        <p>Byg det, du har tegnet</p>
+                    </a>
+
+                    <a href="lab.html?id=media" class="lab_kort tema_media" id="media">
+                        <img src="imgs/360.jpg" alt="Studerende i Media Lab" class="foto">
+                        <img src="imgs/logo_media.svg" alt="" class="lab_logo">
+                        <span class="tag">EK Firskovvej</span>
+                        <h3>Media Lab</h3>
+                        <p>Træd ind i nye verdener</p>
+                    </a>
+
+                    <a href="lab.html?id=circular_material" class="lab_kort tema_circular_material"
+                        id="circular_material">
+                        <img src="imgs/circular_material.jpg" alt="Materialer i Circular Material Lab" class="foto">
+                        <img src="imgs/logo_circular_material.svg" alt="" class="lab_logo">
+                        <span class="tag">EK Guldbergsgade</span>
+                        <h3>Circular Material Lab</h3>
+                        <p>Giv materialer et nyt liv</p>
+                    </a>
+
+                    <a href="lab.html?id=circular" class="lab_kort tema_circular" id="circular">
+                        <img src="imgs/circular_lab.jpg" alt="Workshop i Circular Lab" class="foto">
+                        <img src="imgs/logo_circular.svg" alt="" class="lab_logo">
+                        <span class="tag">EK Guldbergsgade</span>
+                        <h3>Circular Lab</h3>
+                        <p>Forretning, der holder for fremtiden</p>
+                    </a>
+
+                    <a href="lab.html?id=lab16" class="lab_kort tema_lab16" id="lab16">
+                        <img src="imgs/lab16.jpg" alt="Studerende i Lab 16" class="foto">
+                        <img src="imgs/logo_lab16.svg" alt="" class="lab_logo">
+                        <span class="tag">EK Lygten</span>
+                        <h3>Lab 16</h3>
+                        <p>Eksperimentér på Lygten</p>
+                    </a>
+                </div>
+            </div>
+        </section>
+
+        <!-- FAFI -->
+        <section class="moerk">
+            <div class="indhold fafi_grid">
+                <div class="fafi_scene">
+                    <span class="fafi" title="Klik på Fafi!"></span>
+                </div>
+
+                <div>
+                    <div class="sektion_top">
+                        <p class="eyebrow">◎ Mød Fafi – vores AI-guide</p>
+                        <h2>Har du en idé? <span class="kursiv">Eller bare lyst?</span></h2>
+                        <p class="lead">Fafi er labbets lille kamera-væsen og AI-guide. Fafi svarer på alt fra "hvilket
+                            objektiv?" til "hvad skal jeg lave?" – på sekunder, også kl. 23. Klik på Fafi, så tager
+                            Fafi et billede 📸</p>
+                    </div>
+
+                    <div class="forslag">
+                        <button class="spoerg" data-spoergsmaal="Giv mig en idé">✨ Giv mig en idé</button>
+                        <button class="spoerg" data-spoergsmaal="Guide: min første podcast">🎙️ Hvordan laver jeg min
+                            første podcast?</button>
+                        <button class="spoerg" data-spoergsmaal="Hvad kan jeg som multimediedesigner?">🎓 Hvad kan jeg
+                            som multimediedesigner?</button>
+                        <button class="spoerg" data-spoergsmaal="Hvad er ledigt nu?">🟢 Hvad er ledigt nu?</button>
+                        <button class="spoerg" data-spoergsmaal="Hvilket lab passer til mig?">🧭 Hvilket lab passer til
+                            mig?</button>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+    </main>
+
+    <footer>
+        <div class="grid_1-1-1">
+            <div>
+                <h4>EK Labs</h4>
+                <p>Seks labs, hvor studerende på EK går fra idé til noget, man kan røre, høre og se.</p>
+            </div>
+            <div>
+                <h4>Labs</h4>
+                <ul>
+                    <li><a href="tech_story_lab.html">Tech &amp; Story Lab</a></li>
+                    <li><a href="lab.html?id=maker">Maker Lab</a></li>
+                    <li><a href="lab.html?id=media">Media Lab</a></li>
+                    <li><a href="lab.html?id=circular_material">Circular Material Lab</a></li>
+                    <li><a href="lab.html?id=circular">Circular Lab</a></li>
+                    <li><a href="lab.html?id=lab16">Lab 16</a></li>
+                </ul>
+            </div>
+            <div>
+                <h4>Tech &amp; Story Lab</h4>
+                <p>EK Guldbergsgade, bygning A, A025<br>
+                    Man–tor 9.00–16.00 · Fre 9.00–15.00<br>
+                    <a href="tel:+4546460442">46 46 04 42</a><br>
+                    <a href="mailto:techandstorylab@ek.dk">techandstorylab@ek.dk</a>
+                </p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- FAFI CHAT -->
+    <div class="chat" role="dialog" aria-label="Chat med Fafi">
+        <div class="chat_top">
+            <div class="chat_avatar"><img src="imgs/fafi_oeje.svg" alt="Fafi"></div>
+            <div class="chat_navn">
+                <b>Fafi <span class="kursiv">din AI-guide</span></b>
+                <span class="lille">● Online · svarer med det samme</span>
+            </div>
+            <div class="chat_knapper">
+                <button class="nulstil_chat" title="Start forfra" aria-label="Start samtalen forfra">↺</button>
+                <button class="luk_chat" aria-label="Luk chat">✕</button>
+            </div>
+        </div>
+
+        <div class="beskeder"></div>
+
+        <div class="hurtige"></div>
+
+        <form class="chat_form" autocomplete="off">
+            <input type="text" placeholder="Spørg om udstyr, pakker, idéer…" aria-label="Skriv til Fafi"
+                maxlength="300">
+            <button type="submit" aria-label="Send">➤</button>
+        </form>
+        <p class="chat_note">Fafi er en prototype · demo-data om ledighed</p>
+    </div>
+
+    <div class="blitz"></div>
+    <div class="toast" role="status"></div>
+
+    <script src="fafi.js"></script>
+    <script src="script.js"></script>
+</body>
+
+</html>

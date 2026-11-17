@@ -1,0 +1,411 @@
+<!DOCTYPE html>
+<html lang="da">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="robots" content="noindex">
+    <meta name="description"
+        content="Tech & Story Lab på EK: lån udstyr i færdige pakker, book podcast- og fotostudie, og kom i gang med en intro-workshop.">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Encode+Sans+Condensed:wght@400;600;700&family=Encode+Sans:wght@300;400;500;600&family=Zilla+Slab:ital,wght@0,400;1,500;1,600&display=swap"
+        rel="stylesheet">
+
+    <link rel="stylesheet" href="general.css">
+    <link rel="stylesheet" href="layout.css">
+
+    <title>Tech &amp; Story Lab · EK Labs</title>
+
+    <link rel="icon" type="image/svg+xml" href="imgs/fafi_badge.svg">
+</head>
+
+<body class="tema_tech_story">
+
+    <header>
+        <div class="logo">
+            <a href="index.html" aria-label="EK – forside">
+                <img src="imgs/ek_logo.svg" alt="Erhvervsakademi København">
+            </a>
+        </div>
+
+        <nav>
+            <ul class="servicemenu">
+                <li><a href="https://ek.itslearning.com/" target="_blank" rel="noopener">ItsLearning</a></li>
+                <li><a href="https://cphbusiness.mrooms.net/" target="_blank" rel="noopener">Moodle</a></li>
+                <li><a href="https://mit.ek.dk/studiehaandbog/kontakt-ek" target="_blank" rel="noopener">Kontakt</a>
+                </li>
+                <li>
+                    <button class="spoerg_knap aabenChat" aria-label="Spørg EK's AI">
+                        <span class="tekst">Spørg EK’s AI</span>
+                        <span class="avatar"><img src="imgs/fafi_oeje.svg" alt=""></span>
+                    </button>
+                </li>
+            </ul>
+
+            <ul class="menu">
+                <li><a href="index.html">Håndbog</a></li>
+                <li><a href="index.html">Studiemiljø</a></li>
+                <li><a href="index.html">Vejledning</a></li>
+                <li><a href="index.html">Praktik og udveksling</a></li>
+                <li><a href="index.html" class="aktiv">EK Labs</a></li>
+            </ul>
+
+            <button class="burger" aria-label="Åbn menu">
+                <span class="line"></span>
+                <span class="line"></span>
+                <span class="line"></span>
+            </button>
+        </nav>
+    </header>
+
+    <main>
+
+        <!-- HERO -->
+        <section class="lab_hero">
+            <div class="indhold">
+
+                <div class="hero_tekst">
+                    <p class="broedkrumme"><a href="index.html">EK Labs</a> &nbsp;/&nbsp; Tech &amp; Story Lab</p>
+                    <p class="eyebrow">◎ Ét af EK's 6 labs</p>
+                    <h1>Fra idé til<span class="kursiv">færdig historie</span></h1>
+                    <p class="lead">Podcast, film, foto, VR og eye tracking. Vi har udstyret, og vi hjælper dig i gang –
+                        også selvom du aldrig har holdt et kamera før.</p>
+
+                    <div class="knapper">
+                        <a href="#pakker" class="knap knap_cta">Find din pakke →</a>
+                        <a href="#workshops" class="knap knap_ghost">Ny i labbet? Start her</a>
+                    </div>
+                </div>
+
+                <!-- Collage: labbets kategorier i cirkler med farvet ring -->
+                <div class="collage">
+                    <a href="#pakker" class="collage_billede c_podcast" style="--c: var(--pink-400);">
+                        <img src="imgs/podcast.jpg" alt="Podcast-optagelse i studiet">
+                        <span class="tag">Podcast</span>
+                    </a>
+                    <a href="#pakker" class="collage_billede c_foto" style="--c: var(--blue-500);">
+                        <img src="imgs/foto.jpg" alt="Fotoshoot i studiet">
+                        <span class="tag">Foto</span>
+                    </a>
+                    <a href="#pakker" class="collage_billede c_vr" style="--c: var(--yellow-400);">
+                        <img src="imgs/vr.jpg" alt="Studerende med VR-briller">
+                        <span class="tag">VR</span>
+                    </a>
+                    <a href="#pakker" class="collage_billede c_film" style="--c: var(--green-500);">
+                        <img src="imgs/film.jpg" alt="Filmoptagelse med kamera">
+                        <span class="tag">Film</span>
+                    </a>
+                    <a href="#pakker" class="collage_billede c_360" style="--c: var(--mint-200);">
+                        <img src="imgs/360.jpg" alt="360 graders optagelse">
+                        <span class="tag">360°</span>
+                    </a>
+                </div>
+
+            </div>
+        </section>
+
+        <!-- INFOBAR -->
+        <div class="infobar">
+            <div class="info_boks">
+                <div class="info_punkt">
+                    <span>🕘</span>
+                    <div>
+                        <b class="aabent_status groen">Åbent nu · lukker 16.00</b>
+                        <p class="lille">Man–tor 9–16 · fre 9–15</p>
+                    </div>
+                </div>
+                <div class="info_punkt">
+                    <span>📍</span>
+                    <div>
+                        <b>A025, Guldbergsgade</b>
+                        <p class="lille">Lokalet bag receptionen</p>
+                    </div>
+                </div>
+                <div class="info_punkt">
+                    <span>🪪</span>
+                    <div>
+                        <b>Husk studiekort</b>
+                        <p class="lille">Gratis for alle på EK</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- PAKKER -->
+        <section id="pakker">
+            <div class="indhold">
+                <div class="sektion_top">
+                    <p class="eyebrow">◎ Pakker</p>
+                    <h2>Hvad skal du <span class="kursiv">lave?</span></h2>
+                    <p class="lead">Vælg opgaven – vi samler udstyret. Alt er med, også SD-kortet. Tilpas pakken og book
+                        på få minutter.</p>
+                </div>
+
+                <div class="grid_1-1-1-1">
+
+                    <div class="kort pakke" data-navn="Interview">
+                        <img src="imgs/interview.jpg" alt="Interview med kamera og mikrofon">
+                        <div class="kort_tekst">
+                            <span class="badge ledig">3 ledige</span>
+                            <h3>Interview</h3>
+                            <p class="greytext">Til interviews, vox pops og talking heads.</p>
+                            <ul class="tilpas_liste">
+                                <li>✓ Kamera + 24–70 mm objektiv <button>fjern</button></li>
+                                <li>✓ 2 trådløse mikrofoner <button>fjern</button></li>
+                                <li>✓ Stativ <button>fjern</button></li>
+                                <li>✓ SD-kort 128 GB <button>fjern</button></li>
+                                <li class="ikke">– Ikke med: Lys</li>
+                            </ul>
+                            <p class="lille">⏱ Hent 5–10 min &nbsp; ↩ Aflever 5 min</p>
+                            <div class="knapper">
+                                <button class="knap knap_primary knap_lille vaelg_pakke">Vælg pakke</button>
+                                <button class="knap knap_cta knap_lille tilpas">Tilpas</button>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="kort pakke" data-navn="Lille film">
+                        <img src="imgs/film.jpg" alt="Filmoptagelse med gimbal">
+                        <div class="kort_tekst">
+                            <span class="badge faa">1 ledig</span>
+                            <h3>Lille film</h3>
+                            <p class="greytext">Til kortfilm, reklamer og SoMe-video.</p>
+                            <ul class="tilpas_liste">
+                                <li>✓ Kamera + gimbal <button>fjern</button></li>
+                                <li>✓ Shotgun-mikrofon <button>fjern</button></li>
+                                <li>✓ LED-lys <button>fjern</button></li>
+                                <li>✓ SD-kort + batterier <button>fjern</button></li>
+                                <li class="ikke">– Ikke med: Trådløse mikrofoner</li>
+                            </ul>
+                            <p class="lille">⏱ Hent 5–10 min &nbsp; ↩ Aflever 5 min</p>
+                            <div class="knapper">
+                                <button class="knap knap_primary knap_lille vaelg_pakke">Vælg pakke</button>
+                                <button class="knap knap_cta knap_lille tilpas">Tilpas</button>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="kort pakke" data-navn="Podcast">
+                        <img src="imgs/podcast.jpg" alt="Podcast-studie">
+                        <div class="kort_tekst">
+                            <span class="badge ledig">Ledigt kl. 13</span>
+                            <h3>Podcast</h3>
+                            <p class="greytext">Studie eller mobil-kit til optagelse ude.</p>
+                            <ul class="tilpas_liste">
+                                <li>✓ Studie i 2 timer <button>fjern</button></li>
+                                <li>✓ 2–4 mikrofoner <button>fjern</button></li>
+                                <li>✓ Mixer + optager <button>fjern</button></li>
+                                <li>✓ Kort intro første gang <button>fjern</button></li>
+                                <li class="ikke">– Ikke med: Kamera til video</li>
+                            </ul>
+                            <p class="lille">⏱ Hent 5–10 min &nbsp; ↩ Aflever 5 min</p>
+                            <div class="knapper">
+                                <button class="knap knap_primary knap_lille vaelg_pakke">Vælg pakke</button>
+                                <button class="knap knap_cta knap_lille tilpas">Tilpas</button>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="kort pakke" data-navn="Foto">
+                        <img src="imgs/foto.jpg" alt="Fotoudstyr i studiet">
+                        <div class="kort_tekst">
+                            <span class="badge udlaant">Udlånt til torsdag</span>
+                            <h3>Foto</h3>
+                            <p class="greytext">Til portrætter, produkter og mode.</p>
+                            <ul class="tilpas_liste">
+                                <li>✓ Kamera <button>fjern</button></li>
+                                <li>✓ 50 mm + 24–70 mm <button>fjern</button></li>
+                                <li>✓ 2 studielys <button>fjern</button></li>
+                                <li>✓ SD-kort + batterier <button>fjern</button></li>
+                                <li class="ikke">– Ikke med: Baggrundsrulle</li>
+                            </ul>
+                            <p class="lille">⏱ Hent 5–10 min &nbsp; ↩ Aflever 5 min</p>
+                            <div class="knapper">
+                                <button class="knap knap_primary knap_lille vaelg_pakke" disabled>Vælg pakke</button>
+                                <button class="knap knap_cta knap_lille tilpas">Tilpas</button>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </section>
+
+        <!-- LÅN I 3 TRIN -->
+        <section class="moerkest" id="trin">
+            <div class="indhold">
+                <div class="sektion_top">
+                    <p class="eyebrow">◎ Sådan låner du</p>
+                    <h2>Lån i <span class="kursiv">3 trin</span></h2>
+                    <p class="lead">Fra "jeg har en idé" til udstyr i tasken på under 15 minutter.</p>
+                </div>
+
+                <div class="grid_1-1-1">
+                    <div class="trin">
+                        <div class="trin_nr">1</div>
+                        <h3>Vælg pakke</h3>
+                        <p>Se hvad der er ledigt lige nu, og tilpas pakken til din opgave.</p>
+                        <p class="lille">⏱ ca. 2 min</p>
+                    </div>
+                    <div class="trin">
+                        <div class="trin_nr">2</div>
+                        <h3>Book tidsrum</h3>
+                        <p>Log ind med dit EK-login og vælg hvornår du henter og afleverer.</p>
+                        <p class="lille">⏱ ca. 3 min</p>
+                    </div>
+                    <div class="trin">
+                        <div class="trin_nr">3</div>
+                        <h3>Hent i A025</h3>
+                        <p>Vis dit studiekort. Vi tjekker udstyret sammen og viser dig det vigtigste.</p>
+                        <p class="lille">⏱ hent 5–10 min · aflever 5 min</p>
+                    </div>
+                </div>
+
+                <div class="under_trin">
+                    <a href="#pakker" class="knap knap_cta">Book nu →</a>
+                    <button class="knap knap_ghost spoerg" data-spoergsmaal="Hvordan låner jeg?">Spørg Fafi om
+                        lån</button>
+                </div>
+            </div>
+        </section>
+
+        <!-- WORKSHOPS -->
+        <section class="lys" id="workshops">
+            <div class="indhold">
+                <div class="sektion_top">
+                    <p class="eyebrow">◎ Workshops &amp; events</p>
+                    <h2>Ny i labbet? <span class="kursiv">Start her.</span></h2>
+                    <p class="lead">De fleste tager først skridtet, når nogen viser vejen. Så det gør vi – gratis, hver
+                        uge.</p>
+                </div>
+
+                <div class="events">
+                    <div class="event">
+                        <div class="dato" style="--c: var(--pink-400);"><b>10</b><span class="lille">NOV</span></div>
+                        <div class="event_tekst">
+                            <h3>Podcast på 60 minutter</h3>
+                            <p class="greytext">Tirsdag kl. 14–15 · <span class="pladser">6</span> pladser tilbage</p>
+                        </div>
+                        <button class="knap knap_cta knap_lille tilmeld">Tilmeld</button>
+                    </div>
+
+                    <div class="event">
+                        <div class="dato" style="--c: var(--blue-500);"><b>11</b><span class="lille">NOV</span></div>
+                        <div class="event_tekst">
+                            <h3>Film med mobil og gimbal</h3>
+                            <p class="greytext">Onsdag kl. 13–15 · <span class="pladser">4</span> pladser tilbage</p>
+                        </div>
+                        <button class="knap knap_cta knap_lille tilmeld">Tilmeld</button>
+                    </div>
+
+                    <div class="event">
+                        <div class="dato" style="--c: var(--green-500);"><b>18</b><span class="lille">NOV</span></div>
+                        <div class="event_tekst">
+                            <h3>Eye tracking til UX-opgaven</h3>
+                            <p class="greytext">Tirsdag kl. 10–12 · for MMD og Webudvikling</p>
+                        </div>
+                        <button class="knap knap_cta knap_lille tilmeld">Tilmeld</button>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- OM LABBET -->
+        <section id="om">
+            <div class="indhold">
+                <div class="sektion_top">
+                    <p class="eyebrow">◎ Om labbet</p>
+                    <h2>Kig forbi – <span class="kursiv">vi har kaffe</span></h2>
+                    <p class="lead">Tech &amp; Story Lab er åbent for alle studerende og undervisere på EK.</p>
+                </div>
+
+                <div class="grid_1-1-1-1">
+                    <div class="info_kort">
+                        <b>🕘 Åbningstider</b>
+                        <p>Man–tor 9.00–16.00<br>Fredag 9.00–15.00<br>Weekend lukket</p>
+                    </div>
+                    <div class="info_kort">
+                        <b>📍 Find vej</b>
+                        <p>EK Guldbergsgade, bygning A<br>Lokale A025 – bag receptionen</p>
+                    </div>
+                    <div class="info_kort">
+                        <b>☎️ Kontakt</b>
+                        <p><a href="tel:+4546460442">46 46 04 42</a><br><a
+                                href="mailto:techandstorylab@ek.dk">techandstorylab@ek.dk</a></p>
+                    </div>
+                    <div class="info_kort">
+                        <b>🙋 Holdet</b>
+                        <p>Lab-manager: Frederick Lehmann Rosling<br>Labspecialist: Luke Julius Frost<br>
+                            Lab-assistenter: Mikki Simonsen, Kristoffer Hygum Nielsen</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+    </main>
+
+    <footer>
+        <div class="grid_1-1-1">
+            <div>
+                <h4>EK Labs</h4>
+                <p>Seks labs, hvor studerende på EK går fra idé til noget, man kan røre, høre og se.</p>
+            </div>
+            <div>
+                <h4>Labs</h4>
+                <ul>
+                    <li><a href="tech_story_lab.html">Tech &amp; Story Lab</a></li>
+                    <li><a href="lab.html?id=maker">Maker Lab</a></li>
+                    <li><a href="lab.html?id=media">Media Lab</a></li>
+                    <li><a href="lab.html?id=circular_material">Circular Material Lab</a></li>
+                    <li><a href="lab.html?id=circular">Circular Lab</a></li>
+                    <li><a href="lab.html?id=lab16">Lab 16</a></li>
+                </ul>
+            </div>
+            <div>
+                <h4>Tech &amp; Story Lab</h4>
+                <p>EK Guldbergsgade, bygning A, A025<br>
+                    Man–tor 9.00–16.00 · Fre 9.00–15.00<br>
+                    <a href="tel:+4546460442">46 46 04 42</a><br>
+                    <a href="mailto:techandstorylab@ek.dk">techandstorylab@ek.dk</a>
+                </p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- FAFI CHAT -->
+    <div class="chat" role="dialog" aria-label="Chat med Fafi">
+        <div class="chat_top">
+            <div class="chat_avatar"><img src="imgs/fafi_oeje.svg" alt="Fafi"></div>
+            <div class="chat_navn">
+                <b>Fafi <span class="kursiv">din AI-guide</span></b>
+                <span class="lille">● Online · svarer med det samme</span>
+            </div>
+            <div class="chat_knapper">
+                <button class="nulstil_chat" title="Start forfra" aria-label="Start samtalen forfra">↺</button>
+                <button class="luk_chat" aria-label="Luk chat">✕</button>
+            </div>
+        </div>
+
+        <div class="beskeder"></div>
+
+        <div class="hurtige"></div>
+
+        <form class="chat_form" autocomplete="off">
+            <input type="text" placeholder="Spørg om udstyr, pakker, idéer…" aria-label="Skriv til Fafi"
+                maxlength="300">
+            <button type="submit" aria-label="Send">➤</button>
+        </form>
+        <p class="chat_note">Fafi er en prototype · demo-data om ledighed</p>
+    </div>
+
+    <div class="blitz"></div>
+    <div class="toast" role="status"></div>
+
+    <script src="fafi.js"></script>
+    <script src="script.js"></script>
+</body>
+
+</html>
