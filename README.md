@@ -1,4 +1,4 @@
-# EK Labs – fra skjult til synlig
+# EK Labs
 
 Website til EK Tema 9. Siden samler EK's seks labs ét sted med Tech & Story Lab i midten, en quiz ("Hvilket lab er du?"), pakker, lån i 3 trin, workshops og AI-guiden Fafi.
 
